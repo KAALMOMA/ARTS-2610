@@ -1,0 +1,28 @@
+When Curvature == 0.025...
+
+Coordinates for when +Z edge is just about visible (not quite yet)
+X == -0.07670503 (approx. 0)
+Y == -0.01000017 (approx. 0)
+Z == 29.90558	 (approx. 30)
+
+Extrapolating... 
+
+Coordinates for when -Z edge is just about visible (not quite yet)
+X == 0
+Y == 0
+Z == -30
+
+Coordinates for when +X edge is just about visible (not quite yet)
+X == 30
+Y == 0
+Z == 0
+
+Coordinates for when -X edge is just about visible (not quite yet)
+X == -30
+Y == 0
+Z == 0
+
+Plane Dimensions: x = [-50,50], y = 1, z = [-50,50]
+
+Player starts at (0,0) --> In this context, coordinates are (X,Z)...
+
