@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class ParentChanger : MonoBehaviour
+{
+    public Transform childObject; // Assign the child GameObject's Transform in the Inspector
+    public Transform newParent;   // Assign the new parent GameObject's Transform in the Inspector
+    public DistanceChecker distanceChecker;
+
+    void Update()
+    {
+        float d = distanceChecker.Distance;
+        Transform closest = distanceChecker.ClosestTarget;
+        Debug.Log("DISTANCE >> " + d);
+        if(d < 0.75 && d != 0 && closest == childObject)
+        {
+            childObject.SetParent(newParent, false);
+            childObject.transform.localPosition = new Vector3(0f, 5f, 0f);
+        }
+    }
+}
