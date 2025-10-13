@@ -11,10 +11,10 @@ public class ParentChanger : MonoBehaviour
         float d = distanceChecker.Distance;
         Transform closest = distanceChecker.ClosestTarget;
         Debug.Log("DISTANCE >> " + d);
-        if(d < 0.75 && d != 0 && closest == childObject)
+        if(d < 0.875 && d != 0 && closest == childObject)
         {
             childObject.SetParent(newParent, false);
-            childObject.transform.localPosition = new Vector3(0f, 5f, 0f);
+            childObject.transform.localPosition = new Vector3(0f, 6f, 0f);
         }
     }
 }
