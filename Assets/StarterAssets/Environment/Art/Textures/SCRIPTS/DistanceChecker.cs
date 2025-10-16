@@ -34,7 +34,7 @@ public class DistanceChecker : MonoBehaviour
         Distance = minDistance;
         ClosestTarget = closest;
 
-        // Update lights based on minimum distance
+
         if (pointLights != null)
         {
             foreach (Light light in pointLights)

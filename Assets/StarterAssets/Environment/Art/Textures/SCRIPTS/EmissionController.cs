@@ -13,14 +13,14 @@ public class EmissionController : MonoBehaviour
     public DistanceChecker distanceChecker;
     void Start()
     {
-        // Make sure we get the material instance, not the shared one
+    
         Material mat = targetRenderer.material;
 
         // Update the shader's emission color
         mat.SetColor("_EmissionColor", hdrDark);
     }
 
-    // Optional: Change it dynamically
+
     void Update()
     {
         float d = distanceChecker.Distance;

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ParentChanger : MonoBehaviour
 {
-    public Transform childObject; // Assign the child GameObject's Transform in the Inspector
-    public Transform newParent;   // Assign the new parent GameObject's Transform in the Inspector
+    public Transform childObject; 
+    public Transform newParent;   
     public DistanceChecker distanceChecker;
 
     public AudioSource playerBoundSource;

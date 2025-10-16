@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ColorPulse : MonoBehaviour
 {
-    public double intervalSeconds = 0.495867; // Since my stems are all at 121bpm, the time difference between each 1/4 note is 496ms.
+    public double intervalSeconds = 0.495867; // Since my stems are all at 121bpm, the time difference between each 1/4 note is approx. 496ms.
     private double nextEventTime;
 
     public Material mat1;
