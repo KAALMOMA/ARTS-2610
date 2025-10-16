@@ -6,15 +6,21 @@ public class ParentChanger : MonoBehaviour
     public Transform newParent;   // Assign the new parent GameObject's Transform in the Inspector
     public DistanceChecker distanceChecker;
 
+    public AudioSource playerBoundSource;
+    public AudioClip clip;
+
+    public float volume;
+
+
     void Update()
     {
         float d = distanceChecker.Distance;
         Transform closest = distanceChecker.ClosestTarget;
-        Debug.Log("DISTANCE >> " + d);
-        if(d < 0.875 && d != 0 && closest == childObject)
+        if(d < 0.9 && d != 0 && closest == childObject)
         {
             childObject.SetParent(newParent, false);
             childObject.transform.localPosition = new Vector3(0f, 6f, 0f);
-        }
+            playerBoundSource.PlayOneShot(clip, volume);
+        }   
     }
 }
